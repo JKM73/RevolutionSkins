@@ -1,5 +1,5 @@
 <skin>
-	<!-- RevolutionBlack2 for HDMUTeam design by JKM73 V.2.0.2 -->
+	<!-- RevolutionBlack2 for HDMUTeam design by JKM73 V.2.0.1 -->
 	<output id="0">
 	<resolution xres="1280" yres="720" bpp="32" />
 	</output>
@@ -177,17 +177,17 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap pixmap="RevolutionBlack2/icons/dvb.png" position="668,691" size="74,24" zPosition="3" alphatest="blend" />
-		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="670,694" size="68,18" font="Regular;18" zPosition="5" halign="center" valign="top" foregroundColor="blue" backgroundColor="grey2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="670,693" size="68,18" font="Regular;18" zPosition="5" halign="center" valign="top" foregroundColor="g1" backgroundColor="dark" transparent="1">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="670,694" size="68,18" font="Regular;18" zPosition="5" halign="center" valign="top" foregroundColor="blue" backgroundColor="grey2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="670,693" size="68,18" font="Regular;18" zPosition="5" halign="center" valign="top" foregroundColor="g1" backgroundColor="dark" transparent="1">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T" position="670,694" size="68,18" font="Regular;18" zPosition="5" halign="center" valign="top" foregroundColor="blue" backgroundColor="grey2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T" position="670,693" size="68,18" font="Regular;18" zPosition="5" halign="center" valign="top" foregroundColor="g1" backgroundColor="dark" transparent="1">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide" />
@@ -270,11 +270,11 @@
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<ePixmap pixmap="RevolutionBlack2/icons/ratio.png" position="104,620" size="129,24" zPosition="3" alphatest="blend" />
-		<widget source="session.CurrentService" render="Label" position="103,622" size="55,20" font="Regular;19" zPosition="5" halign="right" valign="top" foregroundColor="blue" backgroundColor="grey2" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="103,622" size="55,20" font="Regular;19" zPosition="5" halign="right" valign="top" foregroundColor="uny" backgroundColor="dark" transparent="1">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
-		<eLabel text="x" position="159,622" size="15,20" font="Regular;19" zPosition="5" halign="center" valign="center" foregroundColor="blue" backgroundColor="grey2" transparent="1" />
-		<widget source="session.CurrentService" render="Label" position="174,622" size="55,20" font="Regular;19" zPosition="5" halign="left" valign="top" foregroundColor="blue" backgroundColor="grey2" transparent="1">
+		<eLabel text="x" position="159,622" size="15,20" font="Regular;19" zPosition="5" halign="center" valign="center" foregroundColor="uny" backgroundColor="dark" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="174,622" size="55,20" font="Regular;19" zPosition="5" halign="left" valign="top" foregroundColor="uny" backgroundColor="dark" transparent="1">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
 	</screen>
@@ -324,17 +324,17 @@
 		<widget source="session.RecordState" render="Pixmap" pixmap="RevolutionBlack2/icons/ico_rec_on.png" position="1110,530" size="32,32" zPosition="2" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="1066,630" size="65,20" font="Regular;18" foregroundColor="g1" backgroundColor="black" transparent="1" halign="left">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="1066,630" size="65,20" font="Regular;18" foregroundColor="unff" backgroundColor="black" transparent="1" halign="left">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1066,630" size="65,20" font="Regular;18" foregroundColor="g1" backgroundColor="black" transparent="1" halign="left">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1066,630" size="65,20" font="Regular;18" foregroundColor="unff" backgroundColor="black" transparent="1" halign="left">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T" position="1066,630" size="65,20" font="Regular;18" foregroundColor="g1" backgroundColor="black" transparent="1" halign="left">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T" position="1066,630" size="65,20" font="Regular;18" foregroundColor="unff" backgroundColor="black" transparent="1" halign="left">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide" />
@@ -474,7 +474,7 @@
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<ePixmap pixmap="RevolutionBlack2/icons/time.png" position="285,138" size="104,34" zPosition="3" alphatest="blend" />
-		<widget source="global.CurrentTime" render="Label" position="287,140" size="100,30" font="Regular;26" zPosition="5" halign="center" valign="top" foregroundColor="black" backgroundColor="transpBlack" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="287,140" size="100,30" font="Regular;26" zPosition="5" halign="center" valign="top" foregroundColor="white" backgroundColor="transpBlack" transparent="1">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="133,158" size="130,22" font="Regular;18" halign="center" backgroundColor="black" transparent="1">
@@ -727,7 +727,7 @@
 	<screen flags="wfNoBorder" name="Volume" position="464,30" size="400,38" title="Volume">
 		<ePixmap pixmap="RevolutionBlack2/icons/volback.png" position="0,0" size="400,38" zPosition="2" />
 		<widget name="Volume" pixmap="RevolutionBlack2/icons/vol.png" position="28,7" size="310,24" transparent="1" zPosition="3" />
-		<widget render="VolumeText" source="global.CurrentTime" position="344,4" size="52,30" zPosition="4" font="Regular;26" halign="center" valign="center" foregroundColor="white" shadowColor="#40101010" shadowOffset="-2,-2" transparent="1" />
+		<widget render="VolumeText" source="global.CurrentTime" position="344,4" size="52,30" zPosition="4" font="Regular;26" halign="center" valign="center" foregroundColor="black" shadowColor="#40101010" shadowOffset="-2,-2" transparent="1" />
 	</screen>
 	<screen name="Mute" position="560,280" size="160,160" title="Mute" zPosition="11" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap position="27,27" zPosition="3" size="96,96" pixmap="RevolutionBlack2/icons/mute.png" alphatest="blend" />
