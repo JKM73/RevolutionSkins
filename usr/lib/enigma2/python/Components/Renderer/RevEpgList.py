@@ -28,7 +28,7 @@ class RevEpgList(Renderer, VariableText):
 			evt = self.epgcache.lookupEvent(['IBDCT', (service.toString(), 0, -1, -1)])
 
 		if evt:
-			maxx = 0
+			maxx = 1
 			for x in evt:
 				if maxx > 1:
 					if x[4]:
@@ -38,7 +38,7 @@ class RevEpgList(Renderer, VariableText):
 						text = text + "n/a\n"
 
 				maxx += 1
-				if maxx > 31:
+				if maxx > 5:
 					break
 
 		self.text = text
