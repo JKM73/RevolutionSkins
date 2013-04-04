@@ -324,17 +324,17 @@
 		<widget source="session.RecordState" render="Pixmap" pixmap="RevolutionBlack2/icons/ico_rec_on.png" position="1110,530" size="32,32" zPosition="2" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="1066,630" size="65,20" font="Regular;18" foregroundColor="unff" backgroundColor="black" transparent="1" halign="left">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="1066,630" size="65,20" font="Regular;18" foregroundColor="g1" backgroundColor="black" transparent="1" halign="left">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1066,630" size="65,20" font="Regular;18" foregroundColor="unff" backgroundColor="black" transparent="1" halign="left">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1066,630" size="65,20" font="Regular;18" foregroundColor="g1" backgroundColor="black" transparent="1" halign="left">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T" position="1066,630" size="65,20" font="Regular;18" foregroundColor="unff" backgroundColor="black" transparent="1" halign="left">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T" position="1066,630" size="65,20" font="Regular;18" foregroundColor="g1" backgroundColor="black" transparent="1" halign="left">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide" />
