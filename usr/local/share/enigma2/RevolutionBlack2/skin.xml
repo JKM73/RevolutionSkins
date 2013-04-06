@@ -720,7 +720,7 @@
 		<widget source="session.CurrentService" render="Label" position="754,32" size="80,25" font="Arial;22" halign="left" foregroundColor="unadff2f" backgroundColor="black" transparent="1">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Progress" position="170,13" size="830,12" pixmap="RevolutionBlack2/menu/progress.png" transparent="1">
+		<widget source="session.CurrentService" render="Progress" position="200,10" size="830,12" pixmap="RevolutionBlack2/menu/progress.png" zPosition="1" transparent="1" borderWidth="1" borderColor="unff" backgroundColor="uny">
 			<convert type="ServicePosition">Position</convert>
 	</widget>
 	</screen>
@@ -742,13 +742,13 @@
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlack2/menu/back1.png" />
 		<eLabel position="880,120" size="340,200" zPosition="2" backgroundColor="white" />
 		<widget source="session.VideoPicture" render="Pig" position="885,125" size="330,190" zPosition="3" backgroundColor="unff000000" />
-		<widget source="global.CurrentTime" render="Label" position="227,588" size="100,35" font="Regular;30" halign="right" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="33,637" size="100,35" font="Regular;30" halign="right" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="885,591" size="350,28" font="Regular;24" halign="left" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="891,637" size="350,28" font="Regular;24" halign="left" transparent="1">
 			<convert type="ClockToText">Format:%A, %d. %B. %Y</convert>
 		</widget>
-		<widget source="title" render="Label" position="440,30" size="400,43" font="Regular;35" halign="center" transparent="1" />
+		<widget source="title" render="Label" position="440,20" size="400,43" font="Regular;35" halign="center" transparent="1" />
 		<widget source="menu" render="Listbox" position="440,120" size="400,480" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (0,7), size = (400,30), flags = RT_HALIGN_CENTER, text = 0) ],
@@ -822,13 +822,13 @@
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlack2/menu/back1.png" />
 		<eLabel position="880,120" size="340,200" zPosition="2" backgroundColor="white" />
 		<widget source="session.VideoPicture" render="Pig" position="885,125" size="330,190" zPosition="3" backgroundColor="unff000000" />
-		<widget source="global.CurrentTime" render="Label" position="227,588" size="100,35" font="Regular;30" halign="right" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="33,637" size="100,35" font="Regular;30" halign="right" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="885,591" size="350,28" font="Regular;24" halign="left" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="891,637" size="350,28" font="Regular;24" halign="left" transparent="1">
 			<convert type="ClockToText">Format:%A, %d. %B. %Y</convert>
 		</widget>
-		<widget source="title" render="Label" position="440,30" size="400,43" font="Regular;35" halign="center" transparent="1" />
+		<widget source="title" render="Label" position="440,20" size="400,43" font="Regular;35" halign="center" transparent="1" />
 		<widget source="menu" render="Listbox" position="440,120" size="400,480" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (0,7), size = (400,30), flags = RT_HALIGN_CENTER, text = 0) ],
@@ -850,13 +850,13 @@
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlack2/menu/back1.png" />
 		<eLabel position="880,120" size="340,200" zPosition="2" backgroundColor="white" />
 		<widget source="session.VideoPicture" render="Pig" position="885,125" size="330,190" zPosition="3" backgroundColor="unff000000" />
-		<widget source="global.CurrentTime" render="Label" position="227,588" size="100,35" font="Regular;30" halign="right" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="33,637" size="100,35" font="Regular;30" halign="right" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="885,591" size="350,28" font="Regular;24" halign="left" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="891,637" size="350,28" font="Regular;24" halign="left" transparent="1">
 			<convert type="ClockToText">Format:%A, %d. %B. %Y</convert>
 		</widget>
-		<widget source="title" render="Label" position="440,30" size="400,43" font="Regular;35" halign="center" transparent="1" />
+		<widget source="title" render="Label" position="440,20" size="400,43" font="Regular;35" halign="center" transparent="1" />
 		<widget source="menu" render="Listbox" position="440,120" size="400,480" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (0,7), size = (400,30), flags = RT_HALIGN_CENTER, text = 0) ],
@@ -907,13 +907,13 @@
 		<eLabel position="880,120" size="340,200" zPosition="2" backgroundColor="white" />
 		<widget source="session.VideoPicture" render="Pig" position="885,125" size="330,190" zPosition="3" backgroundColor="unff000000" />
 		<ePixmap position="70,113" size="256,256" pixmap="RevolutionBlack2/menu/scan.png" alphatest="blend" />
-		<widget source="global.CurrentTime" render="Label" position="227,588" size="100,35" font="Regular;30" halign="right" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="33,637" size="100,35" font="Regular;30" halign="right" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="885,591" size="350,28" font="Regular;24" halign="left" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="891,637" size="350,28" font="Regular;24" halign="left" transparent="1">
 			<convert type="ClockToText">Format:%A, %d. %B. %Y</convert>
 		</widget>
-		<widget source="title" render="Label" position="440,30" size="400,43" font="Regular;35" halign="center" transparent="1" />
+		<widget source="title" render="Label" position="440,20" size="400,43" font="Regular;35" halign="center" transparent="1" />
 		<widget source="menu" render="Listbox" position="440,120" size="400,480" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (0,7), size = (400,30), flags = RT_HALIGN_CENTER, text = 0) ],
@@ -927,13 +927,13 @@
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlack2/menu/back1.png" />
 		<eLabel position="880,120" size="340,200" zPosition="2" backgroundColor="white" />
 		<widget source="session.VideoPicture" render="Pig" position="885,125" size="330,190" zPosition="3" backgroundColor="unff000000" />
-		<widget source="global.CurrentTime" render="Label" position="227,588" size="100,35" font="Regular;30" halign="right" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="33,637" size="100,35" font="Regular;30" halign="right" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="885,591" size="350,28" font="Regular;24" halign="left" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="891,637" size="350,28" font="Regular;24" halign="left" transparent="1">
 			<convert type="ClockToText">Format:%A, %d. %B. %Y</convert>
 		</widget>
-		<widget source="title" render="Label" position="440,30" size="400,43" font="Regular;35" halign="center" transparent="1" />
+		<widget source="title" render="Label" position="440,20" size="400,43" font="Regular;35" halign="center" transparent="1" />
 		<widget source="menu" render="Listbox" position="440,120" size="400,480" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (0,7), size = (400,30), flags = RT_HALIGN_CENTER, text = 0) ],
@@ -1015,13 +1015,13 @@
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlack2/menu/back1.png" />
 		<eLabel position="880,120" size="340,200" zPosition="2" backgroundColor="white" />
 		<widget source="session.VideoPicture" render="Pig" position="885,125" size="330,190" zPosition="3" backgroundColor="unff000000" />
-		<widget source="global.CurrentTime" render="Label" position="227,588" size="100,35" font="Regular;30" halign="right" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="33,637" size="100,35" font="Regular;30" halign="right" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="885,591" size="350,28" font="Regular;24" halign="left" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="891,637" size="350,28" font="Regular;24" halign="left" transparent="1">
 			<convert type="ClockToText">Format:%A, %d. %B. %Y</convert>
 		</widget>
-		<widget source="title" render="Label" position="440,30" size="400,43" font="Regular;35" halign="center" transparent="1" />
+		<widget source="title" render="Label" position="440,20" size="400,43" font="Regular;35" halign="center" transparent="1" />
 		<widget source="menu" render="Listbox" position="440,120" size="400,480" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (0,7), size = (400,30), flags = RT_HALIGN_CENTER, text = 0) ],
@@ -1047,13 +1047,13 @@
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlack2/menu/back1.png" />
 		<eLabel position="880,120" size="340,200" zPosition="2" backgroundColor="white" />
 		<widget source="session.VideoPicture" render="Pig" position="885,125" size="330,190" zPosition="3" backgroundColor="unff000000" />
-		<widget source="global.CurrentTime" render="Label" position="227,588" size="100,35" font="Regular;30" halign="right" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="33,637" size="100,35" font="Regular;30" halign="right" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="885,591" size="350,28" font="Regular;24" halign="left" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="891,637" size="350,28" font="Regular;24" halign="left" transparent="1">
 			<convert type="ClockToText">Format:%A, %d. %B. %Y</convert>
 		</widget>
-		<widget source="title" render="Label" position="440,30" size="400,43" font="Regular;35" halign="center" transparent="1" />
+		<widget source="title" render="Label" position="440,20" size="400,43" font="Regular;35" halign="center" transparent="1" />
 		<widget source="menu" render="Listbox" position="440,120" size="400,480" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (0,7), size = (400,30), flags = RT_HALIGN_CENTER, text = 0) ],
@@ -1088,14 +1088,13 @@
 		<eLabel position="802,122" size="426,240" zPosition="2" backgroundColor="white" />
 		<widget source="session.VideoPicture" render="Pig" position="802,122" size="426,240" zPosition="3" backgroundColor="unff000000" />
 		<ePixmap position="504,265" size="256,256" pixmap="RevolutionBlack2/menu/setup.png" alphatest="blend" />
-		<ePixmap position="451,630" zPosition="-9" size="378,78" pixmap="RevolutionBlack2/menu/db.png" alphatest="blend" transparent="1" />
-		<widget source="global.CurrentTime" render="Label" position="227,588" size="100,35" font="Regular;30" halign="right" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="33,637" size="100,35" font="Regular;30" halign="right" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="885,591" size="350,28" font="Regular;24" halign="left" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="891,637" size="350,28" font="Regular;24" halign="left" transparent="1">
 			<convert type="ClockToText">Format:%A, %d. %B. %Y</convert>
 		</widget>
-		<eLabel text="Softwaremanager" position="440,30" size="400,43" font="Regular;35" backgroundColor="black" transparent="1" halign="center" />
+		<eLabel text="Softwaremanager" position="440,20" size="400,43" font="Regular;35" backgroundColor="black" transparent="1" halign="center" />
 		<widget source="menu" render="Listbox" position="58,122" size="402,320" scrollbarMode="showNever" foregroundColor="white" backgroundColor="black" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -1803,14 +1802,13 @@
 	<screen name="HelpMenu" position="0,0" size="1280,720" title="Menu" flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlack2/menu/back1.png" />
 		<ePixmap position="974,252" size="256,256" pixmap="RevolutionBlack2/menu/help.png" alphatest="blend" />
-		<ePixmap position="451,630" zPosition="-9" size="378,78" pixmap="RevolutionBlack2/menu/db.png" alphatest="blend" transparent="1" />
-		<widget source="global.CurrentTime" render="Label" position="227,588" size="100,35" font="Regular;30" halign="right" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="33,637" size="100,35" font="Regular;30" halign="right" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="885,591" size="350,28" font="Regular;24" halign="left" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="891,637" size="350,28" font="Regular;24" halign="left" transparent="1">
 			<convert type="ClockToText">Format:%A, %d. %B. %Y</convert>
 		</widget>
-		<eLabel text="help..." position="440,30" size="400,43" font="Regular;35" backgroundColor="black" halign="center" transparent="1" />
+		<eLabel text="help..." position="440,20" size="400,43" font="Regular;35" backgroundColor="black" halign="center" transparent="1" />
 		<widget name="list" position="368,148" size="550,420" itemHeight="38" scrollbarMode="showOnDemand" transparent="1" />
 		<widget name="rc" position="75,84" size="154,500" pixmaps="RevolutionBlack2/menu/rc.png" zPosition="10" alphatest="on" />
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="RevolutionBlack2/skin_default/arrowdown.png" zPosition="11" alphatest="on" />
@@ -1878,12 +1876,12 @@
 	</screen>
 	<screen name="MediaPlayer" position="0,0" size="1280,720" title="MediaPlayer" flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlack2/menu/back1.png" transparent="1" />
-		<eLabel text="Mediaplayer" position="440,30" size="400,43" font="Regular;35" backgroundColor="black" halign="center" transparent="1" />
+		<eLabel text="Mediaplayer" position="440,20" size="400,43" font="Regular;35" backgroundColor="black" halign="center" transparent="1" />
 		<ePixmap position="1053,343" size="100,38" pixmap="RevolutionBlack2/menu/dbinfo.png" alphatest="blend" transparent="1" />
-		<widget source="global.CurrentTime" render="Label" position="227,588" size="100,35" font="Regular;30" halign="right" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="33,637" size="100,35" font="Regular;30" halign="right" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="885,591" size="350,28" font="Regular;24" halign="left" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="891,637" size="350,28" font="Regular;24" halign="left" transparent="1">
 			<convert type="ClockToText">Format:%A, %d. %B. %Y</convert>
 		</widget>
 		<widget name="filelist" position="87,86" size="390,500" itemHeight="25" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" />
@@ -1896,15 +1894,15 @@
 		<eLabel text="P L A Y L I S T" position="500,372" size="200,30" font="Regular;24" foregroundColor="g1" backgroundColor="black" transparent="1" />
 		<eLabel position="500,411" size="720,2" backgroundColor="g1" />
 		<widget name="playlist" position="500,420" size="720,160" itemHeight="25" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" />
-		<widget name="repeat" pixmaps="RevolutionBlack2/icons/repeat_off.png,RevolutionBlack2/icons/repeat_on.png" position="110,632" size="50,30" transparent="1" alphatest="blend" foregroundColor="white" />
-		<widget source="session.CurrentService" render="Label" position="280,634" size="90,25" font="Regular;22" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
+		<widget name="repeat" pixmaps="RevolutionBlack2/icons/repeat_off.png,RevolutionBlack/icons/repeat_on.png" position="446,581" size="50,30" transparent="1" alphatest="blend" foregroundColor="white" />
+		<widget source="session.CurrentService" render="Label" position="499,597" size="90,25" font="Regular;22" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<eLabel text="/" position="380,634" size="10,25" font="Regular;22" halign="center" backgroundColor="black" transparent="1" foregroundColor="white" />
-		<widget source="session.CurrentService" render="Label" position="400,634" size="90,25" font="Regular;22" halign="left" backgroundColor="black" transparent="1" foregroundColor="white">
+		<eLabel text="/" position="590,597" size="10,25" font="Regular;22" halign="center" backgroundColor="black" transparent="1" foregroundColor="white" />
+		<widget source="session.CurrentService" render="Label" position="601,597" size="90,25" font="Regular;22" halign="left" backgroundColor="black" transparent="1" foregroundColor="white">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Progress" position="500,644" size="720,10" backgroundColor="black" borderWidth="2" borderColor="grey" transparent="1">
+		<widget source="session.CurrentService" render="Progress" position="500,581" size="720,10" backgroundColor="black" borderWidth="2" borderColor="unff" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 		<widget name="artisttext" position="0,0" size="0,0" />
@@ -3147,7 +3145,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="global.CurrentTime" render="Label" position="757,596" size="350,25" font="Regular;20" halign="right" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Format:%A, %d. %B. %Y</convert>
 		</widget>
-		<eLabel text="CleanupWizard" position="440,30" size="400,43" font="Regular;35" backgroundColor="black" transparent="1" halign="center" />
+		<eLabel text="CleanupWizard" position="440,20" size="400,43" font="Regular;35" backgroundColor="black" transparent="1" halign="center" />
 		<widget name="rc" position="163,93" size="154,500" pixmaps="RevolutionBlack2/menu/rc.png" zPosition="10" alphatest="on" />
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="RevolutionBlack2/skin_default/arrowdown.png" zPosition="11" alphatest="on" />
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="RevolutionBlack2/skin_default/arrowdown.png" zPosition="11" alphatest="on" />

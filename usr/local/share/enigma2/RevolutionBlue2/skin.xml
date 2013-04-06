@@ -1088,7 +1088,6 @@
 		<eLabel position="802,122" size="426,240" zPosition="2" backgroundColor="white" />
 		<widget source="session.VideoPicture" render="Pig" position="802,122" size="426,240" zPosition="3" backgroundColor="unff000000" />
 		<ePixmap position="504,265" size="256,256" pixmap="RevolutionBlue2/menu/setup.png" alphatest="blend" />
-		<ePixmap position="451,630" zPosition="-9" size="378,78" pixmap="RevolutionBlue2/menu/db.png" alphatest="blend" transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="227,588" size="100,35" font="Regular;30" halign="right" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1896,15 +1895,15 @@
 		<eLabel text="P L A Y L I S T" position="500,372" size="200,30" font="Regular;24" foregroundColor="g1" backgroundColor="black" transparent="1" />
 		<eLabel position="500,411" size="720,2" backgroundColor="g1" />
 		<widget name="playlist" position="500,420" size="720,160" itemHeight="25" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" />
-		<widget name="repeat" pixmaps="RevolutionBlue2/icons/repeat_off.png,RevolutionBlue2/icons/repeat_on.png" position="110,632" size="50,30" transparent="1" alphatest="blend" foregroundColor="white" />
-		<widget source="session.CurrentService" render="Label" position="280,634" size="90,25" font="Regular;22" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
+		<widget name="repeat" pixmaps="RevolutionBlue2/icons/repeat_off.png,RevolutionBlue2/icons/repeat_on.png" position="446,581" size="50,30" transparent="1" alphatest="blend" foregroundColor="white" />
+		<widget source="session.CurrentService" render="Label" position="499,597" size="90,25" font="Regular;22" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<eLabel text="/" position="380,634" size="10,25" font="Regular;22" halign="center" backgroundColor="black" transparent="1" foregroundColor="white" />
-		<widget source="session.CurrentService" render="Label" position="400,634" size="90,25" font="Regular;22" halign="left" backgroundColor="black" transparent="1" foregroundColor="white">
+		<eLabel text="/" position="590,597" size="10,25" font="Regular;22" halign="center" backgroundColor="black" transparent="1" foregroundColor="white" />
+		<widget source="session.CurrentService" render="Label" position="601,597" size="90,25" font="Regular;22" halign="left" backgroundColor="black" transparent="1" foregroundColor="white">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Progress" position="500,644" size="720,10" backgroundColor="black" borderWidth="2" borderColor="grey" transparent="1">
+		<widget source="session.CurrentService" render="Progress" position="500,581" size="720,10" backgroundColor="black" borderWidth="2" borderColor="grey" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 		<widget name="artisttext" position="0,0" size="0,0" />
