@@ -1,5 +1,5 @@
 <skin>
-	<!-- RevolutionBlack2 for HDMUTeam design by JKM73 V.2.0.6 -->
+	<!-- RevolutionBlack2 for HDMUTeam design by JKM73 V.2.0.5 -->
 	<output id="0">
 	<resolution xres="1280" yres="720" bpp="32" />
 	</output>
@@ -135,14 +135,6 @@
 	</windowstyle>
 	<screen name="InfoBar" position="0,0" size="1280,720" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="RevolutionBlack2/menu/infobar.png" />
-		<eLabel text="SNR" position="855,708" size="35,12" font="Regular;12" backgroundColor="black" transparent="1" foregroundColor="uny" halign="center" />
-		<widget source="session.FrontendStatus" render="Progress" position="891,711" size="60,8" zPosition="1" orientation="orLeftToRight" pixmap="RevolutionBlack2/icons/snr.png" transparent="1" borderWidth="1" borderColor="g1">
-			<convert type="FrontendInfo">SNR</convert>
-		</widget>
-		<eLabel text="AGC" position="1151,708" size="35,12" font="Regular;12" backgroundColor="black" transparent="1" foregroundColor="uny" halign="center" />
-		<widget source="session.FrontendStatus" render="Progress" position="1090,711" size="60,8" zPosition="1" orientation="orRightToLeft" pixmap="RevolutionBlack2/icons/agc.png" transparent="1" borderWidth="1" borderColor="g1">
-			<convert type="FrontendInfo">AGC</convert>
-		</widget>
 		<widget source="session.CurrentService" render="Label" position="218,16" size="100,40" font="Regular;36" halign="right" transparent="1" zPosition="2" backgroundColor="dark" valign="top" foregroundColor="g1" text="1584">
 			<convert type="ServiceNumber">Number</convert>
 		</widget>
@@ -284,12 +276,6 @@
 		<eLabel text="x" position="159,622" size="15,20" font="Regular;19" zPosition="5" halign="center" valign="center" foregroundColor="uny" backgroundColor="dark" transparent="1" />
 		<widget source="session.CurrentService" render="Label" position="174,622" size="55,20" font="Regular;19" zPosition="5" halign="left" valign="top" foregroundColor="uny" backgroundColor="dark" transparent="1">
 			<convert type="ServiceInfo">VideoHeight</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Caids" position="423,50" size="260,20" zPosition="3" font="Regular;15" alphatest="blend" ecmColor="g1" emmColor="red" nocColor="grey3" backgroundColor="transparent">
-			<convert type="CaidDisplay">Default</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" font="Regular;16" position="427,2" size="360,20" halign="left" zPosition="1" backgroundColor="dark" foregroundColor="g1" transparent="1" noWrap="1">
-			<convert type="CaidDisplay">Default</convert>
 		</widget>
 	</screen>
 	<screen name="SecondInfoBar" position="0,0" size="1280,720" title="Second Infobar" backgroundColor="transparent" flags="wfNoBorder">
@@ -1224,7 +1210,7 @@
 		<eLabel position="920,110" zPosition="1" size="330,190" backgroundColor="white" />
 		<ePixmap position="590,674" size="100,38" pixmap="RevolutionBlack2/menu/dbinfo.png" alphatest="blend" transparent="1" />
 		<widget source="session.VideoPicture" render="Pig" position="925,115" zPosition="3" size="320,180" backgroundColor="unff000000" />
-		<widget source="session.Event_Now" render="Progress" pixmap="RevolutionBlack2/menu/slider.png" position="920,305" size="330,6" zPosition="1" transparent="1" borderWidth="1" borderColor="uny">
+		<widget source="session.Event_Now" render="Progress" pixmap="RevolutionBlack2/menu/slider.png" position="920,305" size="330,6" zPosition="1" transparent="1" borderWidth="1" borderColor="g1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1100,12" size="150,43" font="Regular;35" halign="right" backgroundColor="black" transparent="1">
