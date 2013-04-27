@@ -244,7 +244,7 @@
 			<convert type="ValueRange">3,3</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="5,0" size="140,40" font="LCD;40" backgroundColor="dk" transparent="1" halign="left" zPosition="3" valign="bottom">
+		<widget source="global.CurrentTime" render="Label" position="5,0" size="140,40" font="LCD;36" backgroundColor="dk" transparent="1" halign="left" zPosition="3" valign="bottom">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Picon" position="319,8" zPosition="4" size="100,60" transparent="1" alphatest="blend">
@@ -737,11 +737,11 @@
 		<widget source="session.CurrentService" render="Progress" position="200,10" size="830,12" pixmap="RevolutionBlack2/menu/progress.png" zPosition="1" transparent="1" borderWidth="1" borderColor="unff" backgroundColor="uny">
 			<convert type="ServicePosition">Position</convert>
 	</widget>
-	</screen>
-	<screen flags="wfNoBorder" name="Volume" position="464,30" size="400,38" title="Volume">
-		<ePixmap pixmap="RevolutionBlack2/icons/volback.png" position="0,0" size="400,38" zPosition="2" />
-		<widget name="Volume" pixmap="RevolutionBlack2/icons/vol.png" position="28,7" size="310,24" transparent="1" zPosition="3" />
-		<widget render="VolumeText" source="global.CurrentTime" position="344,4" size="52,30" zPosition="4" font="Regular;26" halign="center" valign="center" foregroundColor="bk" shadowColor="#40101010" shadowOffset="-2,-2" transparent="1" />
+		</screen>
+	<screen flags="wfNoBorder" name="Volume" zPosition="1" position="1200,133" size="38,400" title="Volume">
+		<ePixmap pixmap="RevolutionBlack2/icons/volback.png" position="0,0" size="38,400" zPosition="-5" />
+		<widget name="Volume" pixmap="RevolutionBlack2/icons/vol.png" position="7,30" size="24,340" transparent="1" orientation="orBottomToTop" />
+		<widget render="VolumeText" source="global.CurrentTime" position="4,3" size="30,20" zPosition="4" font="Regular;16" halign="center" valign="center" foregroundColor="wh" shadowColor="#40101010" shadowOffset="-2,-2" transparent="1" />
 	</screen>
 	<screen name="Mute" position="560,280" size="160,160" title="Mute" zPosition="11" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap position="27,27" zPosition="3" size="96,96" pixmap="RevolutionBlack2/icons/mute.png" alphatest="blend" />
