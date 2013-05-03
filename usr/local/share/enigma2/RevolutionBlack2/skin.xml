@@ -21,6 +21,7 @@
 		<color name="orange" value="#00ffa500" />
 		<color name="rds_text_bg" value="#00414141" />
 		<color name="red" value="#00ff0000" />
+		<color name="red1" value="#00dc143c" />
 		<color name="rssviewtop" value="#45005050" />
 		<color name="titletext" value="#002b7012" />
 		<color name="transparent" value="#ffffffff" />
@@ -737,10 +738,10 @@
 		<widget source="session.CurrentService" render="Progress" position="200,10" size="830,12" pixmap="RevolutionBlack2/menu/progress.png" zPosition="1" transparent="1" borderWidth="1" borderColor="unff" backgroundColor="uny">
 			<convert type="ServicePosition">Position</convert>
 	</widget>
-		</screen>
+	</screen>
 	<screen flags="wfNoBorder" name="Volume" zPosition="1" position="1200,133" size="38,400" title="Volume">
 		<ePixmap pixmap="RevolutionBlack2/icons/volback.png" position="0,0" size="38,400" zPosition="-5" />
-		<widget name="Volume" pixmap="RevolutionBlack2/icons/vol.png" position="7,30" size="24,340" transparent="1" orientation="orBottomToTop" />
+		<widget name="Volume" pixmap="RevolutionBlack2/icons/vol.png" position="5,29" size="28,344" transparent="1" orientation="orBottomToTop" />
 		<widget render="VolumeText" source="global.CurrentTime" position="4,3" size="30,20" zPosition="4" font="Regular;16" halign="center" valign="center" foregroundColor="wh" shadowColor="#40101010" shadowOffset="-2,-2" transparent="1" />
 	</screen>
 	<screen name="Mute" position="560,280" size="160,160" title="Mute" zPosition="11" flags="wfNoBorder" backgroundColor="transparent">
@@ -1720,7 +1721,7 @@
 		<ePixmap position="950,637" size="35,25" zPosition="10" pixmap="RevolutionBlack2/buttons/key_info.png" transparent="1" alphatest="blend" />
 		<ePixmap position="1100,637" size="35,25" zPosition="10" pixmap="RevolutionBlack2/buttons/key_menu.png" transparent="1" alphatest="blend" />
 	</screen>
-	<screen name="MultiEPG_MV" position="0,0" size="1280,720" title="MultiEPG" flags="wfNoBorder" backgroundColor="bk">
+	<screen name="MultiEPG" position="0,0" size="1280,720" title="MultiEPG" flags="wfNoBorder" backgroundColor="bk">
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlack2/menu/back2.png" />
 		<widget source="global.CurrentTime" render="Label" position="1150,19" size="100,28" font="Regular;26" halign="right" backgroundColor="bk" transparent="1">
 			<convert type="ClockToText">Default</convert>
@@ -1750,11 +1751,11 @@
 		<widget source="Event" render="Label" position="70,128" size="1160,105" font="Arial; 18" backgroundColor="bk" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<eLabel position="70,236" size="1160,2" backgroundColor="orange" />
+		<eLabel position="70,236" size="1160,2" backgroundColor="red1" />
 		<widget name="timeline_text" position="0,238" size="1280,20" selectionDisabled="1" transparent="1" />
-		<eLabel position="70,261" size="1160,2" backgroundColor="orange" />
-		<widget name="list" position="70,265" size="1160,360" font="Regular;22" itemHeight="60" scrollbarMode="showNever" NowBackgroundColor="#249293" PrimetimeBackgroundColor="#008080" TimerBackgroundColor="#8b4513" EntryBackgroundColor="#4682b4" EntryForegroundColorSelected="wh" EntryBackgroundColorSelected="bk" EntryBorderColor="#2f4f4f" />
-		<eLabel position="70,627" size="1160,2" backgroundColor="orange" />
+		<eLabel position="70,261" size="1160,2" backgroundColor="red1" />
+		<widget name="list" position="70,265" size="1160,360" transparent="1" font="Regular;22" itemHeight="36" scrollbarMode="showNever" NowBackgroundColor="#0000ff" PrimetimeBackgroundColor="#00bfff" TimerBackgroundColor="#ff4500" EntryBackgroundColor="#008080" EntryForegroundColorSelected="wh" EntryBackgroundColorSelected="bk" EntryBorderColor="red1" />
+		<eLabel position="70,627" size="1160,2" backgroundColor="red1" />
 		<widget name="timeline_now" position="70,260" zPosition="2" size="15,370" pixmap="RevolutionBlack2/icons/timeline-now.png" alphatest="blend" />
 		<ePixmap pixmap="RevolutionBlack2/buttons/key_red.png" position="290,637" size="25,25" alphatest="blend" />
 		<ePixmap pixmap="RevolutionBlack2/buttons/key_green.png" position="500,637" size="25,25" alphatest="blend" />
