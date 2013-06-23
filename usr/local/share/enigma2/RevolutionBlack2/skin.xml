@@ -1,5 +1,5 @@
 <skin>
-	<!-- RevolutionBlack2 for HDMUTeam design by JKM73 V.2.0.6 -->
+	<!-- RevolutionBlack2 for HDMUTeam design by JKM73 V.2.0.10 -->
 	<output id="0">
 	<resolution xres="1280" yres="720" bpp="32" />
 	</output>
@@ -24,7 +24,7 @@
 		<color name="red1" value="#00dc143c" />
 		<color name="rssviewtop" value="#45005050" />
 		<color name="titletext" value="#002b7012" />
-		<color name="transparent" value="#ffffffff" />
+		<color name="tr" value="#ffffffff" />
 		<color name="trB" value="#80000000" />
 		<color name="trBl" value="#80191970" />
 		<color name="trWh" value="#77c8c8c8" />
@@ -86,7 +86,7 @@
 		<sub name="Subtitle_Italic" font="Regular;30" foregroundColor="undcaaaa" shadowColor="#40101010" shadowOffset="3,3" />
 	</subtitles>
 	<windowstyle type="skinned" id="0">
-		<title offset="20,10" font="Regular;26" />
+		<title offset="48,26" font="Regular;26" />
 		<color name="Background" color="bk" />
 		<color name="LabelForeground" color="wh" />
 		<color name="ListboxBackground" color="bk" />
@@ -134,7 +134,7 @@
 		<color name="WindowTitleForeground" color="wh" />
 		<color name="WindowTitleBackground" color="bk" />
 	</windowstyle>
-	<screen name="InfoBar" position="0,0" size="1280,720" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="InfoBar" position="0,0" size="1280,720" title="InfoBar" flags="wfNoBorder" backgroundColor="tr">
 		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="RevolutionBlack2/menu/infobar.png" />
 		<eLabel text="SNR" position="124,22" size="35,12" font="Regular;12" backgroundColor="bk" transparent="1" foregroundColor="uny" halign="center" />
 		<widget source="session.FrontendStatus" render="Progress" position="159,24" size="60,8" zPosition="1" orientation="orLeftToRight" pixmap="RevolutionBlack2/icons/snr.png" transparent="1" borderWidth="1" borderColor="g1">
@@ -286,14 +286,14 @@
 		<widget source="session.CurrentService" render="Label" position="174,622" size="55,20" font="Regular;19" zPosition="5" halign="left" valign="top" foregroundColor="uny" backgroundColor="dk" transparent="1">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Caids" position="423,50" size="260,20" zPosition="3" font="Regular;15" alphatest="blend" ecmColor="g1" emmColor="red" nocColor="gr3" backgroundColor="transparent">
+		<widget source="session.CurrentService" render="Caids" position="423,50" size="260,20" zPosition="3" font="Regular;15" alphatest="blend" ecmColor="g1" emmColor="red" nocColor="gr3" backgroundColor="tr">
 			<convert type="CaidDisplay">Default</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" font="Regular;16" position="427,2" size="360,20" halign="left" zPosition="1" backgroundColor="dk" foregroundColor="g1" transparent="1" noWrap="1">
 			<convert type="CaidDisplay">Default</convert>
 		</widget>
 	</screen>
-	<screen name="SecondInfoBar" position="0,0" size="1280,720" title="Second Infobar" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="SecondInfoBar" position="0,0" size="1280,720" title="Second Infobar" backgroundColor="tr" flags="wfNoBorder">
 		<ePixmap position="0,502" zPosition="-1" size="1280,163" pixmap="RevolutionBlack2/menu/infobarle.png" alphatest="blend" />
 		<eLabel position="0,0" size="1280,502" backgroundColor="trB" zPosition="-50" />
 		<eLabel position="0,502" size="1280,220" backgroundColor="trB" zPosition="-50" />
@@ -473,7 +473,7 @@
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 	</screen>
-	<screen name="EMCMediaCenter" position="0,540" size="1280,180" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="EMCMediaCenter" position="0,540" size="1280,180" title="InfoBar" flags="wfNoBorder" backgroundColor="tr">
 		<ePixmap position="0,0" zPosition="-1" size="1280,180" pixmap="RevolutionBlack2/menu/emcb.png" />
 		<widget name="Cover" position="158,34" size="85,105" zPosition="4" backgroundColor="bk" alphatest="blend" transparent="1" />
 		<ePixmap position="158,44" size="84,94" pixmap="RevolutionBlack2/icons/movie.png" alphatest="blend" transparent="1" />
@@ -616,7 +616,7 @@
 		<widget source="help" render="Label" position="70,119" size="700,75" font="Regular;16" foregroundColor="g1" />
 		<eLabel position="70,622" size="700,3" backgroundColor="g1" zPosition="1" />
 	</screen>
-	<screen name="MoviePlayer" position="0,0" size="1280,720" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="MoviePlayer" position="0,0" size="1280,720" title="InfoBar" flags="wfNoBorder" backgroundColor="tr">
 		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="RevolutionBlack2/menu/infobarm1.png" alphatest="blend" />
 		<widget source="session.CurrentService" render="Label" position="55,683" size="750,35" font="Regular;28" valign="bottom" backgroundColor="dk" transparent="1" halign="left" noWrap="1">
 			<convert type="ServiceName">Name</convert>
@@ -718,10 +718,10 @@
 		<widget name="key_blue" position="970,637" size="260,25" zPosition="1" font="Regular;20" halign="left" backgroundColor="bk" transparent="1" />
 		<ePixmap position="1160,637" size="35,25" zPosition="10" pixmap="RevolutionBlack2/buttons/key_menu.png" transparent="1" alphatest="blend" />
 	</screen>
-	<screen name="PVRState" position="606,340" size="68,40" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
-		<widget name="state" position="0,0" size="68,40" backgroundColor="transparent" foregroundColor="uny" font="Arial;50" halign="center" valign="center" />
+	<screen name="PVRState" position="606,340" size="68,40" backgroundColor="tr" zPosition="2" flags="wfNoBorder">
+		<widget name="state" position="0,0" size="68,40" backgroundColor="tr" foregroundColor="uny" font="Arial;50" halign="center" valign="center" />
 	</screen>
-	<screen name="TimeshiftState" position="0,0" size="1280,99" title="TimeshiftState" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="TimeshiftState" position="0,0" size="1280,99" title="TimeshiftState" flags="wfNoBorder" backgroundColor="tr">
 		<ePixmap position="0,0" zPosition="-1" size="1280,99" pixmap="RevolutionBlack2/menu/timeshift.png" alphatest="blend" transparent="1" />
 		<widget name="state" position="161,33" size="80,25" font="Arial;24" halign="right" backgroundColor="bk" transparent="1" foregroundColor="unadff2f" />
 		<eLabel text="/" position="242,33" size="15,25" font="Arial;22" halign="center" foregroundColor="unadff2f" backgroundColor="bk" transparent="1" />
@@ -739,12 +739,11 @@
 			<convert type="ServicePosition">Position</convert>
 	</widget>
 	</screen>
-	<screen flags="wfNoBorder" name="Volume" zPosition="1" position="1200,133" size="38,400" title="Volume">
-		<ePixmap pixmap="RevolutionBlack2/icons/volback.png" position="0,0" size="38,400" zPosition="-5" />
-		<widget name="Volume" pixmap="RevolutionBlack2/icons/vol.png" position="5,29" size="28,344" transparent="1" orientation="orBottomToTop" />
-		<widget render="VolumeText" source="global.CurrentTime" position="4,3" size="30,20" zPosition="4" font="Regular;16" halign="center" valign="center" foregroundColor="wh" shadowColor="#40101010" shadowOffset="-2,-2" transparent="1" />
+	<screen flags="wfNoBorder" name="Volume" zPosition="100" position="1213,162" size="68,395" title="Volume" backgroundColor="tr">
+		<ePixmap pixmap="RevolutionBlack2/icons/volback.png" position="0,0" size="68,395" zPosition="-5" />
+		<widget name="Volume" pixmap="RevolutionBlack2/icons/vol.png" position="38,9" size="27,379" transparent="1" orientation="orBottomToTop" />
 	</screen>
-	<screen name="Mute" position="560,280" size="160,160" title="Mute" zPosition="11" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="Mute" position="560,280" size="160,160" title="Mute" zPosition="11" flags="wfNoBorder" backgroundColor="tr">
 		<ePixmap position="27,27" zPosition="3" size="96,96" pixmap="RevolutionBlack2/icons/mute.png" alphatest="blend" />
 	</screen>
 	<screen name="Menu" position="415,200" size="450,390" title="Main menu">
@@ -963,6 +962,14 @@
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="RevolutionBlack2/menu/parental.png" zPosition="2" position="70,113" size="256,256" alphatest="blend" transparent="1">
 			<convert type="MenuEntryCompare">AutomaticVolumeAdjustment</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="RevolutionBlack2/menu/autosh.png" zPosition="2" position="70,113" size="256,256" alphatest="blend" transparent="1">
+			<convert type="MenuEntryCompare">autoshutdown_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="RevolutionBlack2/menu/res.png" zPosition="2" position="70,113" size="256,256" alphatest="blend" transparent="1">
+			<convert type="MenuEntryCompare">autores_setup</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="RevolutionBlack2/menu/user_interface.png" zPosition="2" position="70,113" size="256,256" alphatest="blend" transparent="1">
@@ -1309,6 +1316,61 @@
 		<widget name="list" position="71,139" size="700,480" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="bk" transparent="1" />
 		<ePixmap position="622,637" size="35,25" zPosition="10" pixmap="RevolutionBlack2/buttons/key_ok.png" transparent="1" alphatest="blend" />
 	</screen>
+	<screen name="AudioSelection" position="0,0" size="1280,720" title="Audio Track Selection" flags="wfNoBorder">
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlack2/menu/back2.png" />
+		<eLabel position="80,139" size="650,3" backgroundColor="g1" zPosition="1" />
+		<eLabel position="80,258" size="650,3" backgroundColor="g1" zPosition="1" />
+		<eLabel position="80,302" size="650,3" backgroundColor="g1" zPosition="1" />
+		<eLabel position="80,510" size="650,3" backgroundColor="g1" zPosition="1" />
+		<eLabel position="802,140" size="436,250" zPosition="2" backgroundColor="wh" />
+		<widget source="session.VideoPicture" render="Pig" position="807,145" size="426,240" zPosition="3" backgroundColor="unff000000" />
+		<ePixmap position="998,387" size="256,256" pixmap="RevolutionBlack2/menu/info.png" alphatest="blend" />
+		<ePixmap position="724,541" zPosition="-9" size="378,78" pixmap="RevolutionBlack2/menu/db.png" alphatest="blend" transparent="1" />
+		<ePixmap position="622,637" size="35,25" zPosition="10" pixmap="RevolutionBlack2/buttons/key_ok.png" transparent="1" alphatest="blend" />
+		<widget source="global.CurrentTime" render="Label" position="1150,19" size="100,28" font="Regular;26" halign="right" backgroundColor="bk" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="900,58" size="350,25" font="Regular;20" halign="right" backgroundColor="bk" transparent="1">
+			<convert type="ClockToText">Format:%A, %d. %B. %Y</convert>
+		</widget>
+		<widget source="Title" render="Label" zPosition="2" position="30,13" size="800,43" font="Regular;35" backgroundColor="bk" transparent="1" />
+		<widget name="config" position="130,144" size="600,112" itemHeight="24" scrollbarMode="showOnDemand" backgroundColor="bk" transparent="1" />
+		<widget source="key_red" render="Pixmap" pixmap="RevolutionBlack2/buttons/key_red.png" position="80,144" size="25,25" alphatest="on">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="key_green" render="Pixmap" pixmap="RevolutionBlack2/buttons/key_green.png" position="80,169" size="25,25" alphatest="on">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="key_yellow" render="Pixmap" pixmap="RevolutionBlack2/buttons/key_yellow.png" position="80,194" size="25,25" alphatest="on">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="key_blue" render="Pixmap" pixmap="RevolutionBlack2/buttons/key_blue.png" position="80,219" size="25,25" alphatest="on">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="80,308" size="650,200" zPosition="3" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"templates":
+					{"default": (25, [ 
+						MultiContentEntryText(pos = (10, 0),  size = (0, 0),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
+						MultiContentEntryText(pos = (5, 0),  size = (40, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
+						MultiContentEntryText(pos = (60, 0), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
+						MultiContentEntryText(pos = (200, 0), size = (160, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
+						MultiContentEntryText(pos = (400, 0), size = (100, 25), font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+					], True, "showNever"),
+					"notselected": (25, [ 
+						MultiContentEntryText(pos = (10, 0),   size = (0, 0),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
+						MultiContentEntryText(pos = (5, 0),  size = (40, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2),  # number,
+						MultiContentEntryText(pos = (60, 0), size = (120, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
+						MultiContentEntryText(pos = (200, 0), size = (160, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4),  # language,
+						MultiContentEntryText(pos = (400, 0), size = (100, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+					], False, "showNever")
+					},
+				"fonts": [gFont("Regular", 20), gFont("Regular", 20)],
+				"itemHeight": 25
+				}
+			</convert>
+		</widget>
+	</screen>
 	<screen name="Console" position="0,0" size="1280,720" title="Command execution..." flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlack2/menu/back2.png" />
 		<eLabel position="802,140" size="436,250" zPosition="2" backgroundColor="wh" />
@@ -1535,7 +1597,7 @@
 		<widget source="key_yellow" render="Label" position="680,637" size="260,25" zPosition="1" font="Regular;20" halign="left" backgroundColor="bk" transparent="1" />
 		<widget source="key_blue" render="Label" position="970,637" size="260,25" zPosition="1" font="Regular;20" halign="left" backgroundColor="bk" transparent="1" />
 	</screen>
-	<screen name="Dish" position="900,100" size="130,160" title="Dish" zPosition="-1" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="Dish" position="900,100" size="130,160" title="Dish" zPosition="-1" backgroundColor="tr" flags="wfNoBorder">
 		<widget name="Dishpixmap" pixmap="RevolutionBlack2/skin_default/dish.png" position="0,0" size="130,160" alphatest="off" />
 	</screen>
 	<screen name="EPGSelection" position="0,0" size="1280,720" title="EPG Selection" flags="wfNoBorder">
@@ -2146,7 +2208,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text="Reception Settings" position="30,13" size="800,43" font="Regular;35" backgroundColor="bk" transparent="1" />
 		<widget name="config" position="70,140" size="700,450" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" />
 	</screen>
-	<screen name="NumberZap" position="525,322" size="230,75" title="QuickZap" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="NumberZap" position="525,322" size="230,75" title="QuickZap" backgroundColor="tr" flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-1" size="230,75" pixmap="RevolutionBlack2/menu/zap.png" alphatest="off" />
 		<widget name="number" position="11,30" size="210,30" font="Regular;32" transparent="1" halign="center" foregroundColor="wh" backgroundColor="blue1" />
 	</screen>
@@ -2305,7 +2367,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
-	<screen name="RdsInfoDisplay" position="0,0" size="1280,720" zPosition="-2" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="RdsInfoDisplay" position="0,0" size="1280,720" zPosition="-2" backgroundColor="tr" flags="wfNoBorder">
 		<widget name="RassLogo" pixmap="RevolutionBlack2/skin_default/icons/rass_logo.png" position="100,585" size="50,21" />
 		<widget name="RadioText" position="100,620" size="1080,30" font="Regular;24" noWrap="1" backgroundColor="rds_text_bg" shadowOffset="-2,-2" shadowColor="trB" />
 		<widget name="RtpText" position="100,650" size="1080,30" font="Regular;24" halign="right" noWrap="1" backgroundColor="rds_text_bg" shadowOffset="-2,-2" shadowColor="trB" />
@@ -2556,7 +2618,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="blue_text" position="140,402" size="600,52" font="Regular;22" halign="left" backgroundColor="bk" transparent="1" />
 	</screen>
 	<screen name="Standby" position="0,0" size="1280,720" title="Standby" flags="wfNoBorder" backgroundColor="uny" />
-	<screen name="SubservicesQuickzap" position="380,600" size="560,100" title="Subservices" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="SubservicesQuickzap" position="380,600" size="560,100" title="Subservices" backgroundColor="tr" flags="wfNoBorder">
 		<widget source="session.RecordState" render="Pixmap" pixmap="RevolutionBlack2/skin_default/icons/record.png" position="450,0" zPosition="2" size="14,14" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
@@ -2581,7 +2643,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text="Subtitle selection" position="30,13" size="800,43" font="Regular;35" backgroundColor="bk" transparent="1" />
 		<widget name="config" position="70,140" size="700,450" itemHeight="30" backgroundColor="bk" transparent="1" />
 	</screen>
-	<screen name="SubtitleDisplay" position="0,0" size="1280,720" zPosition="-1" backgroundColor="transparent" flags="wfNoBorder" />
+	<screen name="SubtitleDisplay" position="0,0" size="1280,720" zPosition="-1" backgroundColor="tr" flags="wfNoBorder" />
 	<screen name="TimeDateInput" position="390,280" size=" 500,145" title="Time/Date Input">
 		<widget name="config" position=" 10, 10" size="480,90" itemHeight="30" scrollbarMode="showOnDemand" />
 		<eLabel position="	0,115" size="500,30" zPosition="1" backgroundColor="bk" />
@@ -3414,7 +3476,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_red" render="Label" position="100,637" size="260,25" zPosition="1" font="Regular;20" backgroundColor="bk" transparent="1" />
 		<widget source="key_green" render="Label" position="390,637" size="260,25" zPosition="1" font="Regular;20" backgroundColor="bk" transparent="1" />
 	</screen>
-	<screen name="DVDPlayer" position="0,560" size="1280,163" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="DVDPlayer" position="0,560" size="1280,163" title="InfoBar" flags="wfNoBorder" backgroundColor="tr">
 		<ePixmap position="0,0" zPosition="-1" size="1280,163" pixmap="RevolutionBlack2/menu/infobarm.png" />
 		<ePixmap position="25,80" size="100,38" pixmap="RevolutionBlack2/menu/dbinfo.png" alphatest="blend" transparent="1" />
 		<widget source="session.CurrentService" render="Label" position="127,91" size="720,30" font="Regular; 26" valign="top" noWrap="1" backgroundColor="bk" transparent="1">
@@ -5498,7 +5560,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="RestoreMenuImage" position="0,0" size="1280,720" title="Restore BackupImage" flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlack2/menu/back2.png" />
-		<widget source="Title" render="Label" position="30,13" size="800,48" font="Regular; 32" backgroundColor="bk" transparent="1" />
+		<widget source="Title" render="Label" position="30,13" size="800,48" font="Regular;32" backgroundColor="bk" transparent="1" />
 		<eLabel position="802,140" size="436,250" zPosition="2" backgroundColor="wh" />
 		<widget source="session.VideoPicture" render="Pig" position="807,145" size="426,240" zPosition="3" backgroundColor="unff000000" />
 		<ePixmap position="997,401" size="256,256" pixmap="RevolutionBlack2/menu/setup.png" alphatest="blend" />
@@ -5519,5 +5581,65 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_red" render="Label" position="100,637" zPosition="2" size="200,25" halign="left" valign="center" font="Regular;20" backgroundColor="bk" transparent="1" />
 		<widget source="key_green" render="Label" position="330,637" zPosition="2" size="200,25" halign="left" valign="center" font="Regular;20" backgroundColor="bk" transparent="1" />
 		<widget source="key_yellow" render="Label" position="560,637" zPosition="2" size="200,25" halign="left" valign="center" font="Regular;20" backgroundColor="bk" transparent="1" />
+	</screen>
+	<screen name="AutoShutDownConfiguration" position="0,0" size="1280,720" title="AutoShutDown" >
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlack2/menu/back2.png" />
+		<widget source="Title" render="Label" position="30,13" size="800,48" font="Regular;32" backgroundColor="bk" transparent="1" />
+		<eLabel position="802,140" size="436,250" zPosition="2" backgroundColor="wh" />
+		<widget source="session.VideoPicture" render="Pig" position="807,145" size="426,240" zPosition="3" backgroundColor="unff000000" />
+		<widget source="global.CurrentTime" render="Label" position="1150,19" size="100,28" font="Regular;26" halign="right" backgroundColor="bk" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="900,58" size="350,25" font="Regular;20" halign="right" backgroundColor="bk" transparent="1">
+			<convert type="ClockToText">Format:%A, %d. %B. %Y</convert>
+		</widget>
+		<ePixmap position="997,401" size="256,256" pixmap="RevolutionBlack2/menu/autosh.png" alphatest="blend" />
+		<ePixmap position="720,541" zPosition="-9" size="378,78" pixmap="RevolutionBlack2/menu/db.png" alphatest="blend" transparent="1" />
+		<widget name="config" position="35,110" size="755,515" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+		<ePixmap pixmap="RevolutionBlack2/buttons/red.png" position="70,637" zPosition="2" size="25,25" transparent="1" alphatest="on" />
+		<ePixmap pixmap="RevolutionBlack2/buttons/green.png" position="300,637" zPosition="2" size="25,25" transparent="1" alphatest="on" />
+		<ePixmap pixmap="RevolutionBlack2/buttons/yellow.png" position="530,637" zPosition="2" size="25,25" transparent="1" alphatest="on" />
+		<widget name="buttonred" position="100,637" zPosition="2" size="200,25" halign="left" valign="center" font="Regular;20" backgroundColor="bk" transparent="1" />
+		<widget name="buttongreen" position="330,637" zPosition="2" size="200,25" halign="left" valign="center" font="Regular;20" backgroundColor="bk" transparent="1" />
+		<widget name="buttonyellow" position="560,637" zPosition="2" size="200,25" halign="left" valign="center" font="Regular;20" backgroundColor="bk" transparent="1" />
+	</screen>
+	<screen name="AutoShutDownFile" position="0,0" size="1280,720" title="Select a media file for AutoShutDown" flags="wfNoBorder">
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlack2/menu/back2.png" />
+		<widget source="Title" render="Label" position="30,13" size="800,48" font="Regular;32" backgroundColor="bk" transparent="1" />
+		<eLabel position="802,140" size="436,250" zPosition="2" backgroundColor="wh" />
+		<widget source="session.VideoPicture" render="Pig" position="807,145" size="426,240" zPosition="3" backgroundColor="unff000000" />
+		<ePixmap position="997,401" size="256,256" pixmap="RevolutionBlack2/menu/autosh.png" alphatest="blend" />
+		<ePixmap position="720,541" zPosition="-9" size="378,78" pixmap="RevolutionBlack2/menu/db.png" alphatest="blend" transparent="1" />
+		<widget source="global.CurrentTime" render="Label" position="1150,19" size="100,28" font="Regular;26" halign="right" backgroundColor="bk" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="900,58" size="350,25" font="Regular;20" halign="right" backgroundColor="bk" transparent="1">
+			<convert type="ClockToText">Format:%A, %d. %B. %Y</convert>
+		</widget>
+		<widget name="media" position="35,76" size="755,30" valign="top" font="Regular;22" transparent="1" />
+		<widget name="filelist" position="35,110" size="755,515" zPosition="1" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget source="key_red" render="Label" position="100,637" zPosition="2" size="200,25" halign="left" valign="center" font="Regular;20" backgroundColor="bk" transparent="1" />
+		<widget source="key_green" render="Label" position="330,637" zPosition="2" size="200,25" halign="left" valign="center" font="Regular;20" backgroundColor="bk" transparent="1" />
+		<ePixmap pixmap="RevolutionBlack2/buttons/red.png" position="70,637" zPosition="2" size="25,25" transparent="1" alphatest="on" />
+		<ePixmap pixmap="RevolutionBlack2/buttons/green.png" position="300,637" zPosition="2" size="25,25" transparent="1" alphatest="on" />
+	</screen>
+	<screen name="AutoResSetupMenu" position="0,0" size="1280,720" title="Autoresolution Videomode Setup" flags="wfNoBorder">
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="RevolutionBlack2/menu/back2.png" />
+		<widget source="Title" render="Label" position="30,13" size="800,48" font="Regular;32" backgroundColor="bk" transparent="1" />
+		<eLabel position="802,140" size="436,250" zPosition="2" backgroundColor="wh" />
+		<widget source="session.VideoPicture" render="Pig" position="807,145" size="426,240" zPosition="3" backgroundColor="unff000000" />
+		<widget source="global.CurrentTime" render="Label" position="1150,19" size="100,28" font="Regular;26" halign="right" backgroundColor="bk" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="900,58" size="350,25" font="Regular;20" halign="right" backgroundColor="bk" transparent="1">
+			<convert type="ClockToText">Format:%A, %d. %B. %Y</convert>
+		</widget>
+		<ePixmap position="1085,484" size="156,156" pixmap="RevolutionBlack2/menu/res1.png" alphatest="blend" />
+		<ePixmap position="720,541" zPosition="-9" size="378,78" pixmap="RevolutionBlack2/menu/db.png" alphatest="blend" transparent="1" />
+		<widget name="config" position="35,110" size="755,515" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+		<widget source="key_red" render="Label" position="100,637" zPosition="2" size="200,25" halign="left" valign="center" font="Regular;20" backgroundColor="bk" transparent="1" />
+		<widget source="key_green" render="Label" position="330,637" zPosition="2" size="200,25" halign="left" valign="center" font="Regular;20" backgroundColor="bk" transparent="1" />
+		<ePixmap pixmap="RevolutionBlack2/buttons/red.png" position="70,637" zPosition="2" size="25,25" transparent="1" alphatest="on" />
+		<ePixmap pixmap="RevolutionBlack2/buttons/green.png" position="300,637" zPosition="2" size="25,25" transparent="1" alphatest="on" />
 	</screen>
 </skin>
