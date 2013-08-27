@@ -1248,8 +1248,8 @@
 		</widget>
 		<eLabel position="50,140" size="720,2" backgroundColor="backtop" />
 		<eLabel position="50,623" size="720,2" backgroundColor="backtop" />
-		<eLabel text="Channel Selection" position="50,47" size="800,43" font="Regular;35" halign="left" backgroundColor="black" transparent="1" valign="center" />
-		<widget source="Title" render="Label" position="50,108" size="720,28" font="Regular;23" foregroundColor="g1" backgroundColor="black" transparent="1" />
+		<widget source="Title" render="Label" position="50,47" size="180,43" font="Regular;35" halign="left" backgroundColor="black" transparent="1" valign="center" />
+		<widget name="boquet" position="50,108" size="720,28" font="Regular;23" foregroundColor="g1" backgroundColor="black" transparent="1" />
 		<widget name="list" position="50,145" size="725,475" scrollbarMode="showOnDemand" colorServiceDescription="#ff8c00" colorServiceDescriptionSelected="#0000ff" picServiceEventProgressbar="RevolutionBlack/icons/progcl.png" colorEventProgressbarBorder="white" colorEventProgressbarBorderSelected="black" foregroundColorServiceNotAvail="#d3d3d3" serviceItemHeight="30" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Regular;22" transparent="1" />
 		<widget source="ServiceEvent" render="Label" position="795,303" size="455,28" font="Regular;22" backgroundColor="black" transparent="1" foregroundColor="g1">
 			<convert type="EventName">Name</convert>
